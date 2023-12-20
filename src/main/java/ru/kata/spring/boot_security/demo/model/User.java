@@ -16,7 +16,7 @@ public class User {
     private String password;
     private String email;
     private Integer age;
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany
     @JoinTable(
             name = "roles_users",
             joinColumns = @JoinColumn(name = "users_id"),
